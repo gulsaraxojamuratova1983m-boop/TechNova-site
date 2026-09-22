@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova — IT Solutions</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#07111f;color:#eef6ff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,17,31,.82);backdrop-filter:blur(14px);border-bottom:1px solid #19304a}
+.nav{max-width:1150px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:.5px}.logo span{color:#35b9ff}
+.links{display:flex;gap:25px;color:#b9cbe0;font-size:14px}.links a:hover{color:#35b9ff}
+.btn{display:inline-block;background:#35b9ff;color:#03101d;padding:12px 20px;border-radius:12px;font-weight:800;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px #35b9ff33}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.glow{position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(90px);background:#087cff22;right:5%;top:20%}
+.hero-inner{max-width:1150px;margin:auto;padding:130px 22px 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.badge{display:inline-block;padding:7px 12px;border:1px solid #23577d;border-radius:30px;color:#6bd0ff;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-3px;margin-bottom:22px}
+h1 span{color:#35b9ff}
+.hero p{color:#9db1c7;max-width:650px;font-size:18px;margin-bottom:30px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}
+.card3d{height:370px;border:1px solid #1c3b59;border-radius:28px;background:linear-gradient(145deg,#0e2238,#07101c);position:relative;box-shadow:0 25px 70px #0008;overflow:hidden}
+.card3d:before{content:"";position:absolute;inset:25px;border:1px solid #2b658d;border-radius:20px;transform:perspective(500px) rotateY(-15deg) rotateX(8deg)}
+.screen{position:absolute;left:52px;right:52px;top:62px;height:190px;border-radius:16px;background:linear-gradient(135deg,#0b3b65,#0b1827);border:1px solid #2879a9;padding:20px}
+.code{font-family:monospace;color:#8de0ff;font-size:13px;line-height:1.8}
+.dot{width:9px;height:9px;border-radius:50%;background:#35b9ff;position:absolute;box-shadow:0 0 20px #35b9ff;animation:float 2.5s infinite}
+.dot.d1{top:45px;right:55px}.dot.d2{bottom:70px;left:45px;animation-delay:1s}
+@keyframes float{50%{transform:translateY(-13px)}}
+section{padding:90px 22px}.container{max-width:1150px;margin:auto}
+.title{font-size:38px;margin-bottom:12px}.sub{color:#91a8bf;margin-bottom:38px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service,.project,.contactbox{background:#0b1929;border:1px solid #19344e;border-radius:20px;padding:27px;transition:.25s}
+.service:hover,.project:hover{transform:translateY(-5px);border-color:#35b9ff66}
+.icon{font-size:34px;margin-bottom:15px}.service h3{margin-bottom:8px}.service p,.project p{color:#91a8bf;font-size:14px}
+.projects{grid-template-columns:repeat(3,1fr)}
+.project{min-height:210px}.project small{color:#35b9ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:25px}
+.stat{padding:20px;text-align:center;border:1px solid #19344e;border-radius:16px;background:#091624}.stat b{font-size:29px;display:block}.stat span{color:#839bb3;font-size:13px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+form{display:grid;gap:12px}input,textarea{width:100%;padding:14px;background:#07111f;border:1px solid #25435e;border-radius:11px;color:white;outline:none}textarea{min-height:130px;resize:vertical}input:focus,textarea:focus{border-color:#35b9ff}
+footer{border-top:1px solid #19304a;padding:28px 22px;color:#7189a2;text-align:center;font-size:13px}
+#msg{display:none;padding:12px;border-radius:10px;background:#0d3028;color:#7ee8c8}
+@media(max-width:800px){.links{display:none}.hero-inner,.contact{grid-template-columns:1fr}.card3d{height:300px}.grid,.projects{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="nav">
+  <a class="logo" href="#">Tech<span>Nova</span></a>
+  <div class="links"><a href="#xizmatlar">Xizmatlar</a><a href="#loyihalar">Loyihalar</a><a href="#biz">Biz haqimizda</a><a href="#aloqa">Aloqa</a></div>
+  <a class="btn" href="#aloqa">Bog‘lanish</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="glow"></div>
+ <div class="hero-inner">
+  <div>
+   <div class="badge">⚡ Zamonaviy IT yechimlar</div>
+   <h1>Biznesingizni <span>raqamli</span> kelajakka olib boring.</h1>
+   <p>Veb-saytlar, dasturiy ta’minot, tarmoq va xavfsizlik yechimlarini bitta professional platformada.</p>
+   <div class="actions"><a class="btn" href="#xizmatlar">Xizmatlarni ko‘rish</a><a href="#aloqa" class="btn" style="background:transparent;color:#bfeaff;border:1px solid #285472">Loyiha boshlash →</a></div>
+  </div>
+  <div class="card3d">
+   <div class="dot d1"></div><div class="dot d2"></div>
+   <div class="screen"><div class="code">
+    &gt; initializing TechNova...<br>
+    &gt; web_system: ONLINE<br>
+    &gt; security: PROTECTED<br>
+    &gt; cloud: CONNECTED<br>
+    &gt; status: <b style="color:#75f0b9">READY</b>
+   </div></div>
+  </div>
+ </div>
+</header>
+
+<section id="xizmatlar">
+ <div class="container">
+  <h2 class="title">Xizmatlarimiz</h2>
+  <p class="sub">Texnologiyani oddiy, tez va foydali qilishga e’tibor beramiz.</p>
+  <div class="grid">
+   <div class="service"><div class="icon">🌐</div><h3>Web saytlar</h3><p>Biznes, maktab, portfolio va xizmatlar uchun tezkor, moslashuvchan saytlar.</p></div>
+   <div class="service"><div class="icon">💻</div><h3>Dasturiy ta’minot</h3><p>Maxsus dasturlar va kundalik ishlarni avtomatlashtiruvchi yechimlar.</p></div>
+   <div class="service"><div class="icon">🔐</div><h3>Kiberxavfsizlik</h3><p>Ma’lumotlar va tizimlarni himoyalashga qaratilgan xavfsizlik yondashuvlari.</p></div>
+   <div class="service"><div class="icon">📹</div><h3>CCTV tizimlari</h3><p>Kuzatuv va xavfsizlik tizimlarini rejalashtirish va texnik sozlash.</p></div>
+   <div class="service"><div class="icon">☁️</div><h3>Cloud xizmatlar</h3><p>Fayllar, zaxira nusxalar va onlayn tizimlar uchun qulay infratuzilma.</p></div>
+   <div class="service"><div class="icon">⚙️</div><h3>IT konsultatsiya</h3><p>Kompyuter, tarmoq va raqamli jarayonlar bo‘yicha amaliy maslahatlar.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="loyihalar">
+ <div class="container">
+  <h2 class="title">Loyihalar</h2><p class="sub">Namuna sifatidagi zamonaviy raqamli loyihalar.</p>
+  <div class="grid projects">
+   <div class="project"><small>01 / WEB</small><h3>Smart School</h3><p>O‘quvchilar, darslar va materiallarni boshqarish uchun maktab platformasi.</p></div>
+   <div class="project"><small>02 / BUSINESS</small><h3>Nova Shop</h3><p>Mahsulotlar katalogi, buyurtmalar va mijozlar bilan ishlash tizimi.</p></div>
+   <div class="project"><small>03 / SECURITY</small><h3>Secure Vision</h3><p>Kuzatuv kameralarini boshqarish va xavfsizlik monitoringi konsepsiyasi.</p></div>
+  </div>
+  <div class="stats"><div class="stat"><b>24/7</b><span>raqamli xizmat</span></div><div class="stat"><b>6+</b><span>xizmat yo‘nalishi</span></div><div class="stat"><b>100%</b><span>responsive dizayn</span></div><div class="stat"><b>∞</b><span>rivojlanish imkoniyati</span></div></div>
+ </div>
+</section>
+
+<section id="biz">
+ <div class="container">
+  <h2 class="title">TechNova haqida</h2>
+  <p class="sub">Biz texnologiyani faqat yaratish emas, undan amalda foyda olishni maqsad qilamiz.</p>
+  <div class="contactbox"><p style="color:#b7c9dc">TechNova — IT xizmatlar uchun original demo sayt. Dizayn veb-ishlab chiqish, dasturiy yechimlar, tarmoq va xavfsizlik xizmatlarini bir joyda ko‘rsatish uchun tuzilgan. Sayt mobil telefon va kompyuter ekranlariga moslashadi.</p></div>
+ </div>
+</section>
+
+<section id="aloqa">
+ <div class="container">
+  <h2 class="title">Loyiha haqida yozing</h2><p class="sub">Formani to‘ldiring — demo sifatida xabar oynasi ishlaydi.</p>
+  <div class="contact">
+   <div class="contactbox"><h3>📩 Bog‘lanish</h3><p style="color:#91a8bf;margin-top:10px">Email: hello@technova.uz</p><p style="color:#91a8bf">Telefon: +998 90 000 00 00</p><p style="color:#91a8bf">Manzil: O‘zbekiston</p></div>
+   <form onsubmit="sendForm(event)">
+    <input id="name" placeholder="Ismingiz" required>
+    <input id="email" type="email" placeholder="Email" required>
+    <textarea id="text" placeholder="Loyihangiz haqida..." required></textarea>
+    <button class="btn" type="submit" style="border:0;cursor:pointer">Xabar yuborish</button>
+    <div id="msg">✅ Xabaringiz demo tarzda qabul qilindi!</div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<footer>© 2026 TechNova. Original demo website.</footer>
+<script>
+function sendForm(e){
+ e.preventDefault();
+ document.getElementById('msg').style.display='block';
+ e.target.reset();
+}
+</script>
+</body>
+</html>
